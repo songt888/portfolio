@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+}
+html, body {
+    height: 110%;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.logo {
+    font-size: 3rem;
+    color: #ff6600;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #ff6600;
+}
+.main {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px 50px; 
+    background-color: #0d0d0d;
+    flex-direction: column;
+    text-align: center;
+    flex: 1; 
+}
+.intro {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.intro h1 {
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+.intro .highlight {
+    color: #ff6600;
+}
+.intro h2 {
+    font-size: 1.5rem;
+    color: #ff6600;
+    margin-top: 10px;
+}
+.intro p {
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+.profile-pic img {
+    border-radius: 25%;
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+.about-info {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+.about-info .info-title {
+    background-color: #ff6600;
+    color: #0d0d0d;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.about-info .info-item {
+    margin: 8px 0;
+}
+.about-info .info-item span {
+    font-weight: bold;
+    color: #ff6600;
+}
+.education, .skills {
+    margin-top: 20px;
+    max-width: 600px;
+}
+.education-title, .skills-title {
+    background-color: #ff6600;
+    color: #0d0d0d;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.education-card, .skill-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 10px solid #ff6600;
+    text-align: left;
+}
+.education-card img, .skill-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.education-card div, .skill-card div {
+    flex: 1;
+}
+.education-card h3, .skill-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+.education-card p, .skill-card p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+.skills-section {
+    margin-top: 20px;
+    max-width: 600px;
+}
+.skills-title {
+    background-color: #ff6600;
+    color: #0d0d0d;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.skill-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 10px solid #ff6600;
+    text-align: left;
+}
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+.skill-card p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+.contact {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    color: #f5f5f5;
+}
+.contact-title {
+    background-color: #ff6600;
+    color: #0d0d0d;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.contact-info .info-item {
+    margin: 8px 0;
+    text-align: left;
+}
+.contact-info .info-item span {
+    font-weight: bold;
+    color: #ff6600; 
+    text-align: left;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+}
